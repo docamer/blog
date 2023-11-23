@@ -2,16 +2,31 @@
 <html>
 <head>
     <title>Create New Post</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Create a New Post</h1>
-    <form action="/blogs" method="POST">
-        <label for="title">Title:</label><br>
-        <input type="text" id="title" name="title"><br>
-        <label for="content">Content:</label><br>
-        <textarea id="content" name="content"></textarea><br>
-        <button type="submit">Submit</button>
-    </form>
-    <a href="/blogs">Cancel</a>
+    <header>
+        <h1>Create a New Post</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>Create a New Post</h1>
+            <form action="/blogs" method="POST">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" required></textarea>
+                <!-- Add this inside your <form> tag in new.ejs -->
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+
+                
+                <button type="submit">Submit</button>
+            </form>
+            <br>
+        <a href="/blogs">Cancel</a>
+    </main>
+    <footer></footer>
 </body>
 </html>

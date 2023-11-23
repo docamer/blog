@@ -1,5 +1,8 @@
 const express = require('express');
+const methodOverride = require('method-override');
 const app = express();
+app.use(methodOverride('_method'));
+app.use(express.static('public'));
 const blogRoutes = require('./routes/blogRoutes'); // Ensure this path is correct
 const db = require('./database'); // Ensure this path is correct to your database setup file
 

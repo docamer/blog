@@ -1,0 +1,83 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    min-height: 130px;
+}
+
+a:visited {
+    color: skyblue;
+  }
+
+main{
+    padding: 20px;
+}
+
+/* Container for Form */
+.form-container {
+    width: 70%;
+    min-height: 250px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#content{
+    min-height: 150px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100px;
+}
+
+button[type="submit"]:hover {
+    background-color: #4cae4c;
+    width: 100px;
+}
+
+#deletebutton{
+    background-color: orange;
+    width: 100px;
+}
